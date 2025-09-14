@@ -1,4 +1,4 @@
-# # -->> List - Array - Ordered collection of values
+# # -->> List - Array - Ordered collection of values, mutable
 
 numbers = [13, 2, 23, 53, 13]
 # # print(numbers[3]) # Index 3 
@@ -25,7 +25,18 @@ numbers = [13, 2, 23, 53, 13]
 # print(numbers)
 
 # numbers.sort() # Default ascending
-numbers.sort(reverse=True) # Keyword argument
-print(numbers)
+# numbers.sort(reverse=True) # Keyword argument
+# print(numbers)
 
-print(numbers.count(13)) # Occurences of 13
+# print(numbers.count(13)) # Occurences of 13
+
+# -->> Tuple - Ordered collection of values - immutable
+names = ("Jane", "Martha", "Eugene", "Jacob", "Eugene")
+# print(type(names))
+
+# print(names[1]) # Index
+# names[2] = 'Somebody' # Does not support item assignment
+
+# print(names.index('Eugene')) # Index output -only first occurence if there's multiples
+# print(names.index(6)) # Value error if index doesn't exist 
+# print(len(names)) # Number of names in tuple
