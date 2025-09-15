@@ -27,6 +27,15 @@
 #         print(f'{num} is odd')
 
 # With ternary expression
-for num in range(10, 101):
+# for num in range(10, 101):
     # print(f'{num} is {'even' if num % 2 == 0 else 'odd'}')
-    # print(f'{num} is {'odd' if num % 2 else 'even'}') --> refine further, however not as readable as above
+    # print(f'{num} is {'odd' if num % 2 else 'even'}') --> refine further, not as readable 
+
+# -->> for else
+
+for i in range(10):
+    print(i)
+    if i == 6:
+        break # break out of the loop prematurely
+else:
+    print('loop finished')
